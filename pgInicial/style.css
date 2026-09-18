@@ -1,0 +1,23 @@
+body {
+    background-color:rgb(23, 6, 54)
+
+}
+
+a {
+    color: red;
+}
+
+.title1 {
+    color: white;
+    text-align: center;
+}
+
+.title2 {
+    color: white;
+}
+
+.paragraph {
+    text-align: justify;
+    color: rgb(255, 255, 226);
+
+}
