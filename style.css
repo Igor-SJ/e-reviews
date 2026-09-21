@@ -19,5 +19,12 @@ a {
 .paragraph {
     text-align: justify;
     color: rgb(255, 255, 226);
+    font-size: 1.2rem;
 
+}
+
+section{
+
+    font-size: 1.2rem;
+    display: block;
 }
