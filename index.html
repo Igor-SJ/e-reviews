@@ -9,7 +9,50 @@
     </title>
     <meta name="description" content="Blog para resenhas e críticas casuais de filmes, séries e livros.">
 </head>
-<header>
+<body>
+
+        <header>
+            <div class="logo">
+                Meu site.
+            </div>
+
+        <button 
+            class="menu-button"
+            id="menu-button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="navigation">
+            !
+        </button>
+        
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="#destaques">
+                        Destaques
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobre">
+                        Sobre
+                    </a>
+                </li>
+                <li>
+                    <a href="#grupo">
+                        Conheça o grupo
+                    </a>
+                </li>
+                <li>
+                    <a href="#login">
+                        Inscreva-se
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        </header>
+
+    <section id="sobre">
         <h1>
             Bem vindo ao E-Reviews!
         </h1>
@@ -21,21 +64,20 @@
             Sim? Então você está no lugar certo! No E-Reviews, nossos quatro críticos não tem nada de profissionais... 
             mas eles compensam com o bom humor e entusiasmo!
         </p>
-</header>
-<body>
-    <section>
-        <h3>
-            Veja o conteúdo dos nossos críticos:
+    </section>
 
+    <section id="grupo">
+        <h3>
+            Veja o conteúdo dos nossos críticos!
         </h3>
          <ul>
-               <li>   
-                   <a href="#igor">
-                    Igor Justi.
+            <li>   
+                <a href="#igor">
+                Igor Justi.
                 </a>
             </li>
-               <li>
-                   <a href="#gabriel">
+            <li>
+                <a href="#gabriel">
                     Gabriel Schiavotto.
                 </a>
             </li>                <li>
@@ -51,7 +93,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="destaques">
     <h3>
         Ou as reviews mais recentes: 
     </h3>
@@ -83,7 +125,7 @@
     </ol>
     </section>
 
-    <h2>
+    <!--<h2>
         Saiba mais sobre nossos resenhistas...
     </h2>
     <br>
@@ -121,17 +163,46 @@
         Olá, sou Nicolli blablabla
     </p>
     <br>
+    <-->
 
     <h1>
         Recebas todas as novidades direto no seu e-mail!
     </h1>
 
-    <h3 class="login">Nome: </h3>
-    <input type="text" class="login_bars">
-    <h3 class="login">E-mail: </h3>
-    <input type="email" class="login_bars">
-    <h3 class="login">Senha: </h3>
-    <input type="password" class="login_bars">
-    <input type="button" id="login_button">
+    <section id="login">
+        <form>
+            <h3 class="login">
+            Nome: 
+            </h3>
+            <input 
+                type="text" 
+                class="login_bars"
+                name="username"
+                placeholder="Nome"
+                required >
+
+            <h3 class="login">
+                E-mail: 
+            </h3>
+            <input 
+            type="email" 
+            class="login_bars"
+            name="email"
+            placeholder="E-mail"
+            required >
+            <h3 class="login">
+                Senha: 
+            </h3>
+            <input 
+            type="password" ]
+            class="login_bars"
+            name="password"
+            placeholder="Senha"
+            required >
+            <button type="submit" id="login_button">
+                Confirmar!
+            </button>
+        </form>
+    </section>
 </body>
 </html>

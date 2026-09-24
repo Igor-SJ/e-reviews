@@ -1,6 +1,59 @@
-body {
-    background-color:rgb(23, 6, 54)
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    background-color:rgb(23, 6, 54);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color:black;
+    color: white;
+
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    color: rgb(255, 31, 169);
+}
+
+.menu-button {
+    /*quando aprender javascript, tornar este botão visível apenas no celular*/
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 ol{
@@ -60,3 +113,9 @@ section{
 #login_button{
     display: block;
 }
+
+.logo {
+
+    color:white;
+}
+
