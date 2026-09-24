@@ -43,3 +43,20 @@ section{
     font-size: 1.2rem;
     display: block;
 }
+
+#teste{
+    color: red;
+}
+
+.login {
+    text-align: center;
+}
+
+.login_bars {
+    display: block;
+    margin: 10px auto;
+}
+
+#login_button{
+    display: block;
+}
