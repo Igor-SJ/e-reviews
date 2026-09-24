@@ -3,20 +3,35 @@ body {
 
 }
 
+ol{
+
+    color: red;
+}
+
+ul{
+    color: red;
+}
+
 a {
     color: red;
 }
 
-.title1 {
+h1 {
     color: white;
     text-align: center;
 }
 
-.title2 {
+h2 {
     color: white;
+    text-align: left;
 }
 
-.paragraph {
+h3{
+    color:white;
+    text-align: left;
+}
+
+p {
     text-align: justify;
     color: rgb(255, 255, 226);
     font-size: 1.2rem;
