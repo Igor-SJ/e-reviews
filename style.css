@@ -71,17 +71,13 @@ main h2 {
 .destaques {
     display: grid;
 
-    grid-template-columns: 
-        repeat(auto-fit, minmax(280px, 1fr));
-
     gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.conteudo-card {
-    background-color: rgb(235, 124, 124);
-
+.total-card {
+    background-color: white;
     border-radius: 12px;
     overflow: hidden;
     width: 370px;
@@ -96,7 +92,7 @@ main h2 {
     box-shadow 0.3s ease;
 }
 
-.conteudo-card:hover {
+.total-card:hover {
     transform: translateY(-6px);
     box-shadow: 
         0 12px 25px rgba(255, 251, 227, 0.757);
