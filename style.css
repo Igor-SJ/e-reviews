@@ -68,10 +68,10 @@ main h2 {
     margin-bottom: 30px;
 }
 
-.destaques {
-    display: grid;
+#destaques {
+    display: flex;
 
-    gap: 25px;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -80,7 +80,7 @@ main h2 {
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
-    width: 370px;
+    width: 300px;
 
     box-sizing: border-box;
 
@@ -138,12 +138,12 @@ main h2 {
 }
 
 .conteudo-card {
-    padding: 20px;
+    padding: 10px;
     position: relative;
 }
 
 .conteudo-card h3 {
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 10px;
 
     font-size: 20px;
@@ -152,7 +152,7 @@ main h2 {
 .conteudo-card p {
     color:  #64748b;
     line-height: 1.6;
-    padding: 20px;
+    padding: 10px;
     margin-right: 10px;
 }
 
