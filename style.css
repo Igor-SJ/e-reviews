@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color:rgb(23, 6, 54);
     font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -78,6 +79,8 @@ main h2 {
 #sobre p {
     padding: 40px;
     font-size: 24px;
+    color: white;
+    text-align: justify;
 }
 
 #sobre:hover {
@@ -235,12 +238,6 @@ h1 {
     text-align: center;
 }
 
-p {
-    text-align: justify;
-    color: rgb(255, 255, 226);
-    font-size: 1.2rem;
-}
-
 section{
     font-size: 1.2rem;
     display: block;
@@ -286,14 +283,31 @@ section{
 }
 
 .logo {
-
     color:white;
 }
 
-#github{
-    display: flex;
-    font-weight: bold;
-    padding: 0px 50%;
-    font-size: 1.5rem;
+#saiba-mais {
+    display: block;
+    background-color:rgb(76, 4, 96);
+    color: white;
+    background-image: linear-gradient(to top,rgb(76, 4, 96), rgb(23, 6, 54))
 }
 
+#saiba-mais p {
+    text-align: justify;
+    font-size: 25px;
+    padding: 20px;
+    text-overflow: ellipsis;
+}
+
+#saiba-mais a {
+    display: block;
+    margin: auto;
+    background-color:rgb(37, 13, 82);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 25px;
+}
