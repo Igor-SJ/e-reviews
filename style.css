@@ -68,6 +68,48 @@ main h2 {
     margin-bottom: 30px;
 }
 
+#sobre {
+    display: block;
+    background-color:rgb(37, 13, 82);
+    padding: 20px;
+    font-size: 25px;
+}
+
+#sobre p {
+    padding: 40px;
+    font-size: 24px;
+}
+
+#sobre:hover {
+    transform: scale(1.02);
+    transition: 
+        0.3s ease;
+    box-shadow:
+       0 4px 12px rgba(0, 0, 0, 0.08); 
+}
+
+#grupo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    font-size: 25px;
+    
+
+}
+
+.resenhistas {
+    display: block;
+    padding:5px;
+    background-color:rgb(60, 30, 116);
+    border-radius: 12px;
+}
+
+.resenhistas:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
 #destaques {
     display: flex;
 
