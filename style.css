@@ -120,6 +120,29 @@ main h2 {
     margin: 0 auto;
 }
 
+#filtros {
+    display: flex;
+    justify-content: center; /*Elemento flexbox*/
+    padding: 20px;
+    gap: 15px;
+    transform: scale(1.3);  
+}
+
+#filtros button {
+    background: rgb(60, 30, 116);
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+}
+
+#filtros button:hover {
+    color: red;
+    transform: scale(1.05);
+
+    transition: 
+    transform 0.3s ease,
+}
+
 .total-card {
     background-color: white;
     border-radius: 12px;

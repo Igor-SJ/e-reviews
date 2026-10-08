@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head> <!--Info-->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -114,9 +115,20 @@
         </h2>
     </section>
 
+    <div id="filtros">
+        <button data-filtro="todos">Todos</button>
+        <button data-filtro="filmes">Filmes</button>
+        <button data-filtro="series">Séries</button>
+        <button data-filtro="livros">Livros</button>
+        <button data-filtro="musica">Músicas</button>
+        <button data-filtro="jogos">Jogos</button>
+    </div>
+
+    <br><br>
+
     <section id="destaques">
 
-        <article class="total-card"> <!--Iluminado-->
+        <article class="total-card" data-tipo="filme"> <!--Iluminado-->
             <div class="imagem-card">
                 <img 
                 src="/media/theShiningComp.png"
