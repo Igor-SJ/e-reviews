@@ -148,6 +148,15 @@ main h2 {
     margin: 0 auto;
 }
 
+#mensagem-sem-resultados {
+    color: white;
+    text-align: center;
+}
+
+#mensagem-sem-resultados.hidden {
+    display: none;
+}
+
 .total-card {
     background-color: white;
     border-radius: 12px;
