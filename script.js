@@ -10,7 +10,7 @@ filterButtons.forEach(button => {
     cards.forEach(card => {
       const category = card.dataset.category;
 
-      if (filter === "all" || category === filter) {
+      if (filter === "todos" || category === filter) {
         card.classList.remove("hidden");
       } else {
         card.classList.add("hidden");
