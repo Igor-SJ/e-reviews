@@ -13,7 +13,7 @@ Estes são os mesmo que desenvolvem os códigos e elabora as _reviews_ e artigos
 Ele funciona como a página inicial, que direciona para muitas outras, que contém os respectivos artigos e _reviews_. Para atender as necessidades que tal _layout_ e conceito inicial demanda, temos as seguintes funcionalidades:
 
 - Diferentes seções, como o header, que facilitam a navegação pelo site;
-- Parte de acesso às ao conteúdo de cada respectivo aluno;
+- Parte de acesso ao conteúdo de cada respectivo aluno;
 - Cards com todos os artigos mais recentes;
 - Funcionalidade de pesquisa de acordo com o card;
 - Filtro para selecionar os cards que devem ser vistos de acordo com a _tag_;
@@ -23,9 +23,23 @@ Ele funciona como a página inicial, que direciona para muitas outras, que cont�
 
 ### Explicando cada uma delas:
 
-O site é dividido em diversas seções, que podem ser acessadas logo no cabeçalho. Cada botão daqueles direciona para uma parte diferente do website. Utilizando um sistema de _ids_ e _hrefs_ internos, é possível 
+1. O site é dividido em diversas seções, que podem ser acessadas logo no cabeçalho. Cada botão daqueles direciona para uma parte diferente do website. Utilizando um sistema de _ids_ e _hrefs_ internos, é possível 
 direcionar o usuários para essas partes com apenas um clique. Por exemplo:
 `<a href="#login">
   Inscreva-se
 </a>` 
+
+2. Após uma breve seção expositiva sobre o que é o site, há o nome de todos os alunos que toparam escrever resenhas para o site. Ao clicar nelas, o usuário é redirecionado para suas respectivas páginas.
+
+3. Os cards são uma maneira fácil de rapidamente decidir qual artigo o usuário deseja ler, além de ser buscável, divisível, e replicável em centenas, ou até mesmo milhares de cards semelhantes. De maneira
+estilizada e compacta, estes pequenos artigos dizem ao leitor tudo que ele precisa saber antes de decidir se um artigo o interessa ou não.
+
+4.  Contudo, os cards não são úteis apenas por si só. Para que eles se tornem eficientes, é necessário adicionar outras funções ao site.
+Uma delas é a pesquisa por texto. Ao digitar qualquer coisa em uma barra acima dos cards, por meio de um código de JavaScript, filtra-se apenas os cards que tenham, de alguma maneira ou disposição, as palavras
+buscadas pelo usuário.
+
+6. A outra é a funcionalidade de filtragem por tags.
+Cada card recebe um tag, isto é, uma categorização de seu conteúdo geral. Por exemplo, se um card é sobre filme, série, ou livro. Com isso, o usuário clica um botão, e imediatamente continuam visíveis apenas os cards
+pertinentes a esse filtro, retirando de vista qualquer artigo que não o interesse e deixando-o escolher sem distrações o que ele irá ler a seguir.
+
 
