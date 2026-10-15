@@ -12,7 +12,7 @@ Estes são os mesmo que desenvolvem os códigos e elabora as _reviews_ e artigos
 
 Ele funciona como a página inicial, que direciona para muitas outras, que contém os respectivos artigos e _reviews_. Para atender as necessidades que tal _layout_ e conceito inicial demanda, temos as seguintes funcionalidades:
 
-- Diferentes sessões, como o header, que facilitam a navegação pelo site;
+- Diferentes seções, como o header, que facilitam a navegação pelo site;
 - Parte de acesso às ao conteúdo de cada respectivo aluno;
 - Cards com todos os artigos mais recentes;
 - Funcionalidade de pesquisa de acordo com o card;
@@ -20,3 +20,12 @@ Ele funciona como a página inicial, que direciona para muitas outras, que cont�
 - Função de adicionar o próprio comentário ou artigo;
 - Possibilidade de receber as informações no e-mail;
 - Aba de saiba mais que direciona o usuário à esta página do Github;
+
+### Explicando cada uma delas:
+
+O site é dividido em diversas seções, que podem ser acessadas logo no cabeçalho. Cada botão daqueles direciona para uma parte diferente do website. Utilizando um sistema de _ids_ e _hrefs_ internos, é possível 
+direcionar o usuários para essas partes com apenas um clique. Por exemplo:
+`<a href="#login">
+  Inscreva-se
+</a>` 
+
