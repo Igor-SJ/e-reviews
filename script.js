@@ -1,3 +1,21 @@
+const searchBar = document.getElementById("search-input");
+const items = document.querySelectorAll(".total-card");
+
+  searchBar.addEventListener("input", function () {
+    let searchText = searchBar.value.toLowerCase();
+
+    items.forEach(function (item) {
+    const text = item.textContent.toLowerCase();
+
+      if (text.includes(searchText)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+        }
+  });
+});
+
+
 const filterButtons = document.querySelectorAll("#filtros button");
 const cards = document.querySelectorAll(".total-card");
 const noResultsMessage = document.querySelector("#mensagem-sem-resultados");
