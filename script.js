@@ -33,3 +33,10 @@ filterButtons.forEach(button => {
     button.classList.add("active");
   });
 });
+
+ const textarea = document.getElementById("conteudo-bar");
+
+  textarea.addEventListener("input", function () {
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
+  });
