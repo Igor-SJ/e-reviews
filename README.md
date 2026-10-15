@@ -38,17 +38,33 @@ direcionar o usuários para essas partes com apenas um clique. Por exemplo:
 </a>` 
 
 2. Após uma breve seção expositiva sobre o que é o site, há o nome de todos os alunos que toparam escrever resenhas para o site. Ao clicar nelas, o usuário é redirecionado para suas respectivas páginas.
+Isto funciona com o uso de uma estrutura de HTML similar à anterior:
+` <a href="#igor">
+  Igor Justi.
+</a>` 
 
 3. Os cards são uma maneira fácil de rapidamente decidir qual artigo o usuário deseja ler, além de ser buscável, divisível, e replicável em centenas, ou até mesmo milhares de cards semelhantes. De maneira
-estilizada e compacta, estes pequenos artigos dizem ao leitor tudo que ele precisa saber antes de decidir se um artigo o interessa ou não.
+estilizada e compacta, estes pequenos artigos dizem ao leitor tudo que ele precisa saber antes de decidir se um artigo o interessa ou não. 
+Para serem elaborados, foi necessário utilizar uma mistura de `<div>, <article> e <section>`, além de diversos atributos _class_ e _id_.
 
 4.  Contudo, os cards não são úteis apenas por si só. Para que eles se tornem eficientes, é necessário adicionar outras funções ao site.
 Uma delas é a pesquisa por texto. Ao digitar qualquer coisa em uma barra acima dos cards, por meio de um código de JavaScript, filtra-se apenas os cards que tenham, de alguma maneira ou disposição, as palavras
 buscadas pelo usuário.
+Isso foi feito utilizando o JavaScript, por meio de funções como:
+`searchBar.addEventListener`
+e
+`items.forEach`
+Que adiciona um evento de _input_ na barra de pesquisa e compara cada letra pesquisada pelo conteúdo textual dos cards; respectivamente.
 
 5. A outra é a funcionalidade de filtragem por tags.
 Cada card recebe um tag, isto é, uma categorização de seu conteúdo geral. Por exemplo, se um card é sobre filme, série, ou livro. Com isso, o usuário clica um botão, e imediatamente continuam visíveis apenas os cards
 pertinentes a esse filtro, retirando de vista qualquer artigo que não o interesse e deixando-o escolher sem distrações o que ele irá ler a seguir.
+Desta vez, o código essencial é:
+`button.addEventListener` que adiciona essa propriedade reativa à cada botão de filtragem.
+Além disso, caso a filtragem que o usuário tenha escolhido não vá de acordo com nenhum artigo no site, é mostrada uma imagem de erro por meio deste código:
+` if (noResultsMessage) {
+      noResultsMessage.classList.toggle("hidden", visibleCards > 0);
+    }`
 
 6. Para aumentar a interatividade que o site possui com o usuário, foi adicionado uma funcionalidade em que ele pode enviar o próprio comentário ou artigo por meio de uma simples barra de _input_. Assim, ele pode dizer
 as próprias opiniões e contribuir com o crescimento do conteúdo do site com anedotas, histórias, críticas construtivas, ou até mesmo mensagens de agradecimento.
