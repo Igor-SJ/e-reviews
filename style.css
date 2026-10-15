@@ -398,6 +398,10 @@ section{
     background-image: linear-gradient(to top,rgb(76, 4, 96), rgb(23, 6, 54))
 }
 
+#saiba-mais.hidden {
+    display:none;
+}
+
 #saiba-mais p {
     text-align: justify;
     font-size: 25px;

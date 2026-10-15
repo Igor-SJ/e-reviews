@@ -57,4 +57,30 @@ filterButtons.forEach(button => {
   textarea.addEventListener("input", function () {
     this.style.height = "auto";
     this.style.height = this.scrollHeight + "px";
-  });
+  });s
+
+
+const button = document.getElementById("saiba-mais-botao");
+const menu = document.getElementById("saiba-mais");
+
+button.addEventListener("click", function () {
+    const isOpen = menu.classList.toggle("show");
+  button.setAttribute("aria-expanded", isOpen);
+});
+
+// Close the menu when clicking outside it
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".dropdown")) {
+    menu.classList.remove("show");
+    button.setAttribute("aria-expanded", "false");
+  }
+});
+
+// Close the menu when pressing Escape
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    menu.classList.remove("show");
+    button.setAttribute("aria-expanded", "false");
+    button.focus();
+  }
+});
