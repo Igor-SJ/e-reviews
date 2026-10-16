@@ -4,6 +4,11 @@
 
 E-reviews é um projeto de Web-Design feito por alunos da UniFacens para praticar e aprimorar as habilidades necessárias para o Web Design requeridas pelo mercado de trabalho, sejam elas _soft_ ou _hard skills_, isto é
 competências brutas e técnicas na elaboração estrutural e estética do código, no que se diz _soft skills_, ou as habilidades sociais e emocionais necessárias para gerenciar um projeto enquanto se trabalha em grupo.
+Adicionalmente, ela é a primeira experiência e prática acadêmica com ferramentas de desenvolvimento, como Git, GitHub, e Visual Studio Code. Conforme o site é elaborado, os integrantes do grupo aprendem como utilizar
+esses _softwares_, compreendendo suas funcionalidades, possibilidades e limitações, além de praticar o versionamento, uma boa prática de programação, útil em muitas outras áreas, não apenas o web design.
+
+<img width="1842" height="958" alt="image" src="https://github.com/user-attachments/assets/f74aa651-f413-424e-8f7d-c5ab0d89e201" />
+Essa é a carinha do site!
 
 ### Membros do grupo.
 
@@ -19,9 +24,10 @@ Ele funciona como a página inicial, que direciona para muitas outras, que cont�
 - Cards com todos os artigos mais recentes;
 - Funcionalidade de pesquisa de acordo com o card;
 - Filtro para selecionar os cards que devem ser vistos de acordo com a _tag_;
+- Botão da sorte;
 - Função de adicionar o próprio comentário ou artigo;
 - Possibilidade de receber as informações no e-mail;
-- Aba de saiba mais que direciona o usuário à esta página do Github;
+- Aba de saiba mais que direciona o usuário a esta página do Github;
 
 Além de algumas funcionalidades invisíveis ao usuário, como:
 
@@ -66,23 +72,27 @@ Além disso, caso a filtragem que o usuário tenha escolhido não vá de acordo 
       noResultsMessage.classList.toggle("hidden", visibleCards > 0);
     }`
 
-6. Para aumentar a interatividade que o site possui com o usuário, foi adicionado uma funcionalidade em que ele pode enviar o próprio comentário ou artigo por meio de uma simples barra de _input_. Assim, ele pode dizer
+6. O botão "Estou com sorte", popularizado pelo Google, é uma funcionalidade que leva o usuário para alguma página aleatória. No nosso caso, esse botão é responsável por direcionar o indivíduo diretamente para algum}
+artigo aleatório. Pode parecer apenas uma funcionalidade divertida, mas, com tantas opções, pode ser um alívio para o usuário se surpreender com uma decisão que não foi feita por ele.
+Esse sistema utiliza o Javascript, e sua base é o comando `const indice = Math.floor(Math.random() * links.length);`, que gera um número aleatório, que seleciona um dos links criados em uma _array_.
+
+7. Para aumentar a interatividade que o site possui com o usuário, foi adicionado uma funcionalidade em que ele pode enviar o próprio comentário ou artigo por meio de uma simples barra de _input_. Assim, ele pode dizer
 as próprias opiniões e contribuir com o crescimento do conteúdo do site com anedotas, histórias, críticas construtivas, ou até mesmo mensagens de agradecimento.
 
-7. Caso um usuário realmente adore o conteúdo publicado no site, ele pode optar por receber atualizações em seu e-mail pessoal. Ao registrar uma conta, ele se torna um inscrito oficial, que receberá sempre as
+8. Caso um usuário realmente adore o conteúdo publicado no site, ele pode optar por receber atualizações em seu e-mail pessoal. Ao registrar uma conta, ele se torna um inscrito oficial, que receberá sempre as
 atualizações e novidades direto no e-mail.
 
-8. Por ser, primeiramente, um projeto acadêmico de desenvolvimento web, o projeto tem, no final, uma aba de "saiba-mais", em que o usuário pode se informar sobre a real intenção educacional e lúdica por trás do website.
+9. Por ser, primeiramente, um projeto acadêmico de desenvolvimento web, o projeto tem, no final, uma aba de "saiba-mais", em que o usuário pode se informar sobre a real intenção educacional e lúdica por trás do website.
 Nessa mesma seção, ele tem acesso a um link para este repositório do Github, onde poderá acessar todo o código, commits, e o processo criativo por trás dele.
 
-9. Ao separar a programação do site em 3 arquivos diferentes, fica muito mais simples a compreensão do código. O html é para a estrutura do site e seu conteúdo bruto. CSS é para a estilização visual, mas
+10. Ao separar a programação do site em 3 arquivos diferentes, fica muito mais simples a compreensão do código. O html é para a estrutura do site e seu conteúdo bruto. CSS é para a estilização visual, mas
 principalmente estática dele, alterando coisas como cor, formato, tamanho e disposição na tela em relação aos diferentes dispositivos e resoluções de tela. Por último, o JavaScript tem a função de aumentar a
 interatividade do site, adicionando funções mais complexas que complementam a experiência do usuário e tornam maior a possibilidade que ele fique por mais tempo na página ou retorne para ela com mais frequência.
 
-10. Flexbox é um dos fatores essenciais do CSS, sendo ele a base da maioria dos websites modernos da Internet. Ele permite que os elementos e objetos em um site se alternem de posição, tamanho e ordem para caber
+11. Flexbox é um dos fatores essenciais do CSS, sendo ele a base da maioria dos websites modernos da Internet. Ele permite que os elementos e objetos em um site se alternem de posição, tamanho e ordem para caber
 nas condições determinadas. Graças a esse fator, os celulares podem acessar os mesmos sites que computadores e monitores sem prejudicar o desempenho, acessibilidade ou usabilidade.
 
-11. No ambiente profissional, modelos de organização de projeto como Scrum e Kanban são extremamente valorizados; mas o que são eles?
+12. No ambiente profissional, modelos de organização de projeto como Scrum e Kanban são extremamente valorizados; mas o que são eles?
   - KanBan: Modelo baseado no estado de determinada tarefa, ou seja, se ela já está feita, em progresso, ou a ser feita. É um dos modelos mais simples de organização de times e projetos, ao mesmo tempo que um dos
   mais populares e úteis mundialmente.
   - Scrum: Derivado do KanBan, este modelo de organização de projetos adiciona mais um aspecto: o backlog, em que toda e qualquer ideia é colocada, como em uma lista infinita, e apenas as mais importantes, urgentes,
