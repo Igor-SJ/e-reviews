@@ -323,6 +323,21 @@ main h2 {
     transform: scale(1.3);
 }
 
+#sorte {
+    margin: auto;
+    margin-top:50px;
+    display: block;
+    transform: scale(1.3);
+    background: rgb(60, 30, 116);
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+}
+
+#sorte:hover {
+    transform: scale(1.35);
+}
+
 
 
 ol{
@@ -391,16 +406,28 @@ section{
     color:white;
 }
 
-#saiba-mais {
+#saiba-mais-botao {
+    margin: auto;
+    margin-top:50px;
     display: block;
+    transform: scale(1.3);
+    background: rgb(60, 30, 116);
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+}
+
+#saiba-mais {
+    display: none;
     background-color:rgb(76, 4, 96);
     color: white;
     background-image: linear-gradient(to top,rgb(76, 4, 96), rgb(23, 6, 54))
 }
 
-#saiba-mais.hidden {
-    display:none;
+#saiba-mais.show {
+    display:block;
 }
+
 
 #saiba-mais p {
     text-align: justify;

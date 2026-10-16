@@ -57,30 +57,70 @@ filterButtons.forEach(button => {
   textarea.addEventListener("input", function () {
     this.style.height = "auto";
     this.style.height = this.scrollHeight + "px";
-  });s
+  });
 
+const sorte = document.getElementById("sorte");
+
+sorte.addEventListener("click", function () {
+
+ const links = [];
+
+  cards.forEach(function (card) {
+    const link = card.querySelector("a[href]");
+
+    if (link) {
+      links.push(link.href);
+    }
+  });
+
+  // Verifica se existem artigos disponíveis
+  if (links.length === 0) {
+    alert("Nenhum artigo disponível para sorteio!");
+    return;
+  }
+
+   // Escolhe um índice aleatório
+  const indice = Math.floor(Math.random() * links.length);
+
+  // Abre o artigo sorteado
+  window.location.href = links[indice];
+
+})
 
 const button = document.getElementById("saiba-mais-botao");
 const menu = document.getElementById("saiba-mais");
 
-button.addEventListener("click", function () {
+if (button && menu) {
+  button.addEventListener("click", function (event) {
+    event.stopPropagation();
+
     const isOpen = menu.classList.toggle("show");
-  button.setAttribute("aria-expanded", isOpen);
-});
+    button.setAttribute("aria-expanded", isOpen);
+  });
 
-// Close the menu when clicking outside it
-document.addEventListener("click", function (event) {
-  if (!event.target.closest(".dropdown")) {
-    menu.classList.remove("show");
-    button.setAttribute("aria-expanded", "false");
-  }
-});
+  // Fecha ao clicar fora do dropdown
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".dropdown")) {
+      menu.classList.remove("show");
+      button.setAttribute("aria-expanded", "false");
+    }
+  });
 
-// Close the menu when pressing Escape
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    menu.classList.remove("show");
-    button.setAttribute("aria-expanded", "false");
-    button.focus();
-  }
-});
+  // Fecha ao pressionar Escape
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      menu.classList.remove("show");
+      button.setAttribute("aria-expanded", "false");
+      button.focus();
+    }
+  });
+} else {
+  console.error("Botão ou menu dropdown não encontrado.");
+};
+
+function descerTela() {
+            document.getElementById("saiba-mais-botao").scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+}
